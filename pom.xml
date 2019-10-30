@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<name>spring-cloud-conf-cli-web-impl-example</name>
+
+	<groupId>com.ivoslabs</groupId>
+	<artifactId>spring-cloud-conf-cli-web-impl-example</artifactId>
+	<version>1.0.0</version>
+
+	<packaging>war</packaging>
+
+	<description>spring-cloud-config implementatio example without spring-boot</description>
+
+	<properties>
+
+		<!-- Generic properties -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- Web -->
+		<servlet.version>3.1.0</servlet.version>
+
+	</properties>
+
+	<dependencies>
+
+
+		<!-- spring cloud config client -->
+		<dependency>
+			<groupId>com.ivoslabs</groupId>
+			<artifactId>spring-cloud-config-cli-web</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!-- Spring MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring-framework.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- Other Web dependencies -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+
+	</dependencies>
+
+
+
+
+
+</project>
