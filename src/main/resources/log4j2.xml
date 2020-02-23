@@ -5,34 +5,20 @@
 
 	<Appenders>
 
-		<!-- old normal log -->
-
-		<File name="file1" fileName="./logs/test.log" append="true">
-			<PatternLayout pattern="[%5p] %d{EEE d MMM yyyy HH:mm:ss.SSS zzz} [%c{1}] %m%n" />
-		</File>
-
 		<Console name="console" target="SYSTEM_OUT">
 			<PatternLayout pattern="[%5p] %d{EEE d MMM yyyy HH:mm:ss.SSS zzz} [%c] %m%n" />
 		</Console>
-
 
 	</Appenders>
 
 	<Loggers>
 
-		<logger name="net.spy.memcached" additivity="false" level="INFO">
+		<logger name="com.ivoslabs" additivity="false" level="DEBUG">
 			<appender-ref ref="console" />
-			<appender-ref ref="file1" />
-			<appender-ref ref="file2" />
 		</logger>
 
-
-
 		<root level="INFO">
-		 
 			<appender-ref ref="console" />
-			<appender-ref ref="file1" />
-			 
 		</root>
 
 	</Loggers>

@@ -10,7 +10,9 @@
 
 	<packaging>war</packaging>
 
-	<description>spring-cloud-config implementatio example without spring-boot</description>
+	<description>spring-cloud-config implementation example without spring-boot</description>
+	
+	<url>https://github.com/Ivos-Labs/spring-cloud-conf-cli-web-impl-example</url>
 
 	<properties>
 
@@ -26,7 +28,6 @@
 	</properties>
 
 	<dependencies>
-
 
 		<!-- spring cloud config client -->
 		<dependency>
@@ -48,7 +49,6 @@
 			</exclusions>
 		</dependency>
 
-
 		<!-- Other Web dependencies -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -57,12 +57,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-
-
 	</dependencies>
-
-
-
-
 
 </project>

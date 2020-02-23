@@ -18,9 +18,8 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 import com.ivoslabs.spring.cloud.config.cli.web.SomeService;
 
 /**
- * Servlet to reload and re-inject the properties from a spring-cloud-config-server service<br>
- * <br>
- * Final endpoint: <code>[ip]:[puerto]/[contexto]/actuator/refresh</code>
+ * Servlet to test de SomeService values <br>
+ * http://127.0.0.1:8080/spring-cloud-conf-cli-web-impl-example/TestValues
  * 
  * @author imperezivan
  *
@@ -35,7 +34,7 @@ public class TestValues extends HttpServlet {
     private static final Logger LOGGER = LoggerFactory.getLogger(TestValues.class);
 
     /**
-     * Creates a new TestValue
+     * Creates a new TestValues
      */
     public TestValues() {
 	super();
