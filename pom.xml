@@ -11,7 +11,7 @@
 	<packaging>war</packaging>
 
 	<description>spring-cloud-config implementation example without spring-boot</description>
-	
+
 	<url>https://github.com/Ivos-Labs/spring-cloud-conf-cli-web-impl-example</url>
 
 	<properties>
@@ -25,15 +25,19 @@
 		<!-- Web -->
 		<servlet.version>3.1.0</servlet.version>
 
+		<!-- cloud-conf-cli-web version -->
+		<cloud-conf-cli-web.version>1.0.0</cloud-conf-cli-web.version>
+
 	</properties>
 
 	<dependencies>
 
-		<!-- spring cloud config client -->
+		<!-- cloud-conf-cli-web -->
+		<!-- https://github.com/Ivos-Labs/spring-cloud-conf-cli-web -->
 		<dependency>
 			<groupId>com.ivoslabs</groupId>
-			<artifactId>spring-cloud-config-cli-web</artifactId>
-			<version>1.0.0</version>
+			<artifactId>cloud-config-cli-web</artifactId>
+			<version>${cloud-conf-cli-web.version}</version>
 		</dependency>
 
 		<!-- Spring MVC -->
