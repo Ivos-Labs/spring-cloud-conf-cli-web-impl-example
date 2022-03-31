@@ -26,7 +26,7 @@
 		<spring-cloud-conf-cli-web.version>1.0.0</spring-cloud-conf-cli-web.version>
 
 		<!-- Spring framework version -->
-		<spring-framework.version>4.3.7.RELEASE</spring-framework.version>
+		<spring-framework.version>5.3.18</spring-framework.version>
 	</properties>
 
 	<dependencies>
